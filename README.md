@@ -1,109 +1,187 @@
-# The Minimal theme
+# The Minimal Light Theme
 
-[Build Status](https://github.com/pages-themes/minimal/actions/workflows/ci.yaml) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
+[![LICENSE](https://img.shields.io/github/license/yaoyao-liu/minimal-light?style=flat-square&logo=creative-commons&color=EF9421)](https://github.com/yaoyao-liu/minimal-light/blob/main/LICENSE)
 
-*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
+\[[Demo the theme](https://minimal-light-theme.yliu.me/)\]  \[[简体中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hans.md) | [繁體中文](https://github.com/yaoyao-liu/minimal-light/blob/master/README_zh_Hant.md) | [Deutsche](https://github.com/yaoyao-liu/minimal-light/blob/master/README_de.md)\]
+ 
+*This is the source code of my homepage. I build this website based on [minimal](https://github.com/orderedlist/minimal).*
+<br>
+*Feel free to use and share the source code anywhere you like.*
 
-![Thumbnail of Minimal](thumbnail.png)
+The latest version of my homepage is available here: [[link](https://github.com/yaoyao-liu/yaoyao-liu.github.io)]
+<br>
+A template for Max Planck Institute for Informatics is available here: [[link](https://github.com/yaoyao-liu/minimal-light-theme-mpi-inf)]
 
-## Usage
+## Features
 
-To use the Minimal theme:
+- Simple and elegant personal homepage theme
+- Jekyll theme, automatically deployed by GitHub Pages
+- Basic search engine optimization
+- Mobile friendly
+- Supporting Markdown 
+- Supporting dark mode
 
-1. Add the following to your site's `_config.yml`:
+## Project Architecture
 
-    ```yml
-    remote_theme: pages-themes/minimal
-    ```
+```
+.
+├── _data                    
+|   └── publications.yml                      # the YAML file for publications
+├── _includes                    
+|   ├── publications.md                       # the Markdown file for publications
+|   └── services.md                           # the Markdown file for services
+├── _layouts                  
+|   └── homepage.html                         #  the html template for the homepage 
+├── _sass
+|   ├── minimal-light.scss                    #  this file will be compiled into a CSS file to control the style of the page              
+|   └── minimal-light-no-dark-mode.scss       #  this file is similar to minimal-light.scss with the dark mode disabled
+├── assets                                    #  some files
+├── html_source_file                          #  compiled HTML files
+├── .gitignore                                #  this file specifies intentionally untracked files that Git should ignore
+├── CNAME                                     #  the custom domain, will be used by GitHub page sevice
+├── Gemfile                                   #  a RubyGems related file
+├── LICENSE                                   #  the license file
+├── README.md                                 #  the readme file (English)
+├── README_de.md                              #  the readme file (German)
+├── README_zh_Hans.md                         #  the readme file (Simplified Chinese)
+├── README_zh_Hant.md                         #  the readme file (Traditional Chinese)
+├── _config.yml                               #  the Jekyll configuration file, including some options of the page  
+└── index.md                                  #  the content of the index page, using Markdown
+```
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+## Getting Started
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+This template can be used in the following two ways: 
+- **Using with the GitHub Pages Service.** GitHub will provide you with a server to generate and host web pages.
+- **Using locally with Jekyll.** You may install Jekyll on your own computer and generate static web pages (i.e., HTML files) with this template. After that, you may upload the HTML files to your server.
+
+The detailed instructions are available below.
+
+
+### Using with the GitHub Pages Service
+
+There are two ways to use this template on GitHub:
+
+#### Fork this repository
+- Fork this repository (or [use this repository as a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)) and change the name to `your-username.github.io`.
+
+- Enable the GitHub pages for that repository following the steps [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
+
+#### Using this repository as a remote theme
+To use this theme, add the following to your repository's `_config.yml`:
+
+```yaml
+remote_theme: yaoyao-liu/minimal-light
+```
+
+Please note that adding the above line will directly apply all the default settings in this repository to yours.
+
+If you hope to edit any files (e.g., `index.md`), you still need to copy them to your repository.
+
+### Using Locally with Jekyll
+
+First, install [Ruby](https://www.ruby-lang.org/en/) and [Jekyll](https://jekyllrb.com/). The install instructions can be found here: <https://jekyllrb.com/docs/installation/#guides>
+
+Then, clone this repository:
+
+```bash
+git clone https://github.com/yaoyao-liu/minimal-light.git
+cd minimal-light
+```
+Install and run:
+
+```bash
+bundle install
+bundle add webrick
+bundle exec jekyll server
+```
+View the live page using `localhost`:
+<http://localhost:4000>. You can get the HTML files in `_site` folder.
+
+### Using the HTML version
+
+The compiled HTML files are available in the `html_source_file` folder. If you don't like Jekyll, you may directly edit and use the HTML version.
 
 ## Customizing
 
 ### Configuration variables
 
-Minimal will respect the following variables, if set in your site's `_config.yml`:
+The Minimal Light theme will respect the following variables, if set in your site's `_config.yml`:
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
+  ```yaml
+# Basic Information 
+title: Your Name
+position: Ph.D. Student
+affiliation: Your Affiliation
+email: yourname (at) example.edu
 
-Additionally, you may choose to set the following optional variables:
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: minimal light
+description: The Minimal Light is a simple and elegant jekyll theme for academic personal homepage.
+canonical: https://minimal-light-theme.yliu.me/
 
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/
+cv_link: assets/files/curriculum_vitae.pdf
+github_link: https://github.com/
+linkedin: https://www.linkedin.com/
+twitter: https://twitter.com/
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: ./assets/img/avatar.png
+favicon: ./assets/img/favicon.png
+favicon_dark: ./assets/img/favicon-dark.png
+
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: true
+
+# Auto Dark Mode
+# You may use the option to disable the automatic dark theme
+auto_dark_mode: true
+
+# Font
+# You can use this option to choose between Serif or Sans Serif fonts.
+font: "Serif" # or "Sans Serif"
+
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics: UA-111540567-4
+  ```
+### Edit `index.md`
+
+Create `index.md` and add your personal information. It supports **Markdown** and **HTML** syntax.
+
+### Edit included files
+
+There are two markdown files included in `index.md`. They are `_includes/publications.md` and `_includes/service.md`, respectively. These two files also support **Markdown** and **HTML** syntax. If you don't hope to include these two files, you may remove the following lines in `index.md`:
+https://github.com/yaoyao-liu/minimal-light/blob/b38070cd0b6bce45d8a885f3828549af8f82b7cb/index.md?plain=1#L21-L23
+
+If you hope to edit the publication list without changing the format, you may edit `_data/publications.yml`:
+https://github.com/yaoyao-liu/minimal-light/blob/77b1b3b31d4561091bcd739f37a2e1880e8b5ca5/_data/publications.yml#L3-L11
+
 
 ### Stylesheet
 
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
+If you'd like to add your own custom styles, you may edit `_sass/minimal-light.scss`.
 
 ### Layouts
 
-If you'd like to change the theme's HTML layout:
+If you'd like to change the theme's HTML layout, you may edit `_layout/homepage.html`.
 
-1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
+## License
 
-### Overriding GitHub-generated URLs
+This work is licensed under a [Creative Commons Zero v1.0 Universal](https://github.com/yaoyao-liu/minimal-light/blob/master/LICENSE) License.
 
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
+## Acknowledgements
 
-1. Look at [the template source](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
+Our project uses the source code from the following repositories:
 
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+* [pages-themes/minimal](https://github.com/pages-themes/minimal)
 
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+* [orderedlist/minimal](https://github.com/orderedlist/minimal)
 
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+* [al-folio](https://github.com/alshedivat/al-folio)
