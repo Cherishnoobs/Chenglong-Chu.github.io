@@ -16,15 +16,12 @@ main:
     conference: The 31st ACM International Conference on Multimedia <strong>(MM)</strong>, 2023.
     pdf: https://dl.acm.org/doi/abs/10.1145/3581783.3612116
     code: https://github.com/MrGiovanni/ContinualLearning
-    image: ./assets/img/teaser_example_2.png
+    image: ./assets/img/teaser_example_1.png
 
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
-    authors: Fangming Zhong, <strong>Chenglong Chu</strong>, Zijie Zhu, Zhikui Chen* (*Corresponding authors)
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
+    authors: Fangming Zhong*, <strong>Chenglong Chu*</strong>, Zijie Zhu, Zhikui Chen (*These authors contributed equally to this work.)
+    conference_short: SIGIR
+    conference: The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2024.
     pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
     notes: Under Reviewing
-    image: ./assets/img/teaser_example.png
+    image: ./assets/img/tear2.png
