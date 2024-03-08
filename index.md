@@ -2,21 +2,22 @@
 layout: homepage
 ---
 
-## About Me
+## Hello 🙋‍♂️！
+I am ChengLong Chu. I am a Master student at [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology,
+advised by [Prof. FangMing Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from
+ChangZhou University.
 
-I am a Ph.D. student at ...
+My research foucuses on AI for Multi-modal represent aligin, transfer, decoupling, include HEH and MCGH.
 
 ## Research Interests
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+- **Multi-modal:** multi-modal representation learning, image-text retrival, video-text retrival
+- **Deep Learning:** hypergraph learning, decoupled representation learning
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[Nov. 2023]** Received 
+- **[Jun. 2023]** One paper about cross-modal retrival is accepted to ACM MM 2023.
 
 {% include_relative _includes/publications.md %}
 
