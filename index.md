@@ -19,7 +19,6 @@ My research interests lie in deep learning and Multi-modal. Recently, I'm partic
 - **[Feb. 2024]** Code and model weights of **HEH** are released!
 - **[Nov. 2023]** Received **2023 Intel Scholarship**
 - **[Oct. 2023]** Received Individual award for postgraduate research innovation
-- **[Nov. 2023]** Received ****
 - **[Jun. 2023]** One paper about cross-modal retrival is accepted to ACM MM 2023.
 
 {% include_relative _includes/publications.md %}
