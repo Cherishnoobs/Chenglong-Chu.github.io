@@ -11,7 +11,7 @@ My research interests lie in deep learning and Multi-modal. Recently, I'm partic
 
 ## Research Interests
 
-- **Multimodal:** multi-modal representation learning, image-text retrival, video-text retrival
+- **Multimodal:** multi-modal representation learning, image-text retrieval, video-text retrieval
 - **Deep Learning:** hypergraph learning, decoupled representation learning
 
 ## News
