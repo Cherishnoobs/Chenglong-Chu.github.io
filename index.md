@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## Hello 🙋‍♂️！
-I am ChengLong Chu. I am a Master student at [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology,
+I am Chenglong Chu. I am a Master student at [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology,
 advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from Changzhou University.
 
 My research interests lie in deep learning and Multi-modal. Recently, I'm particularly interested in multimodal, video-text retrieval and large language models.
@@ -18,6 +18,7 @@ My research interests lie in deep learning and Multi-modal. Recently, I'm partic
 
 - **[Feb. 2024]** Code and model weights of **HEH** are released!
 - **[Nov. 2023]** Received **2023 Intel Scholarship**
+- **[Oct. 2023]** Received Individual award for postgraduate research innovation
 - **[Nov. 2023]** Received ****
 - **[Jun. 2023]** One paper about cross-modal retrival is accepted to ACM MM 2023.
 
