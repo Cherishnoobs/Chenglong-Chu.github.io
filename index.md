@@ -7,7 +7,7 @@ I am ChengLong Chu. I am a Master student at [INCODAT](http://www.ubinec.org/) L
 advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from
 ChangZhou University.
 
-My research foucuses on AI for Multi-modal represent aligin, transfer, decoupling, include HEH and MCGH.
+My research foucuses on AI for Multi-modal representation aligin, transfer and decoupling, include HEH and MCGH.
 
 ## Research Interests
 
