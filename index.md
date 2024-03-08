@@ -16,9 +16,11 @@ My research foucuses on AI for Multi-modal represent aligin, transfer, decouplin
 
 ## News
 
-- **[Nov. 2023]** Received 
+
+- **[Feb. 2024]** Code and model weights of **HEH** are released!
+- **[Nov. 2023]** Received **2023 Intel Scholarship**
 - **[Jun. 2023]** One paper about cross-modal retrival is accepted to ACM MM 2023.
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+<!-- {% include_relative _includes/services.md %} -->

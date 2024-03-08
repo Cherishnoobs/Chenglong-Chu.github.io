@@ -1,6 +1,6 @@
 # basic information
-title: ChengLong Chu
-position: Master. Student
+title: Chenglong Chu
+position: Master Student
 affiliation: Dalian University of Technology
 affiliation_url: https://www.dlut.edu.cn/
 email: cherish1357785883 (at) gmail.com
@@ -8,7 +8,9 @@ email: cherish1357785883 (at) gmail.com
 
 avatar: ./assets/img/ccl.jpg
 logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
+favicon: ./assets/img/dlut.png
+favicon_dark: ./assets/img/dlut.png
+description: Chenglong Chu is a master student at INCODAT Lab, Dalian University of Technology.
 show_downloads: true
 google_analytics:
 remote_theme: yaoyao-liu/minimal-light
