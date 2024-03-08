@@ -15,13 +15,13 @@ main:
     conference_short: ACM MM
     conference: The 31st ACM International Conference on Multimedia <strong>(MM)</strong>, 2023.
     pdf: https://dl.acm.org/doi/abs/10.1145/3581783.3612116
-    code: https://github.com/MrGiovanni/ContinualLearning
+    code: https://github.com/Cherishnoobs/HEH
     image: ./assets/img/teaser_example_1.png
 
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
     authors: Fangming Zhong*, <strong>Chenglong Chu*</strong>, Zijie Zhu, Zhikui Chen (*These authors contributed equally to this work.)
     conference_short: SIGIR
     conference: The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2024.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
+    # pdf: https://arxiv.org/pdf/2002.10211.pdf
     notes: Under Reviewing
     image: ./assets/img/tear2.png
