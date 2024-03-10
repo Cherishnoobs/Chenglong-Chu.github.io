@@ -100,7 +100,7 @@
       <br>
 
       {% if site.enable_footnote %}
-      <p><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
+      <p><small>&copy; Chenglong Chu,  <span id="year"></span></small></p>
       {% endif %}
 
       </section>
@@ -109,6 +109,19 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      // 使用JavaScript获取当前年份
+      var currentYear = new Date().getFullYear();
+      
+      // 在网页加载完成后执行更新年份的操作
+      window.onload = function() {
+          // 查找具有指定ID的元素
+          var yearElement = document.getElementById("year");
+          
+          // 将当前年份插入到元素中
+          yearElement.innerHTML = currentYear;
+      };
+  </script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
