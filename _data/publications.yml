@@ -20,8 +20,8 @@ main:
 
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
     authors: Fangming Zhong*, <strong>Chenglong Chu*</strong>, Zijie Zhu, Zhikui Chen (*These authors contributed equally to this work.)
-    conference_short: SIGIR
-    conference: The 47th International ACM SIGIR Conference on Research and Development in Information Retrieval <strong>(SIGIR)</strong>, 2024.
+    conference_short: ACM MM
+    conference: The 32st ACM International Conference on Multimedia <strong>(MM)</strong>, 2024.
     # pdf: https://arxiv.org/pdf/2002.10211.pdf
     notes: Under Reviewing
     image: ./assets/img/tear2.png
