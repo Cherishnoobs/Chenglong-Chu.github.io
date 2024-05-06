@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## Hello 🙋‍♂️！
-I am Chenglong Chu. I am a Master student at [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology,
+I am Chenglong Chu, a Master student at [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology,
 advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from Changzhou University.
 
 My current research interests focus on multi-modal feature alignment and multi-modal large model pre-training. With the increasingly strong trend of multi-modal integration in the community, I hope to focus on the following areas in the future:
