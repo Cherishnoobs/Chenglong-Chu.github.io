@@ -10,7 +10,7 @@ avatar: ./assets/img/avtor.png
 logo: /assets/img/logo.png
 favicon: ./assets/img/logo.png
 favicon_dark: ./assets/img/logo.png
-description: Chenglong Chu is a master student at INCODAT Lab, Dalian University of Technology.
+description: 
 show_downloads: true
 google_analytics:
 remote_theme: yaoyao-liu/minimal-light

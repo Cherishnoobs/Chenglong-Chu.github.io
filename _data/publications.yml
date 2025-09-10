@@ -13,18 +13,21 @@ main:
   - title: OneRec-V2 Technical Report
     authors: Kwai OneRec Team
     conference_short: arxiv
+    conference: arxiv
     pdf: https://arxiv.org/abs/2508.20900
     image: ./assets/img/onerec_v2.png
 
   - title: Kwai Keye-VL 1.5 Technical Report
     authors: Kwai Keye Team
     conference_short: arxiv
+    conference: arxiv
     pdf: https://arxiv.org/abs/2509.01563
     image: ./assets/img/keye1_5.png
 
   - title: Kwai Keye-VL Technical Report
     authors: Kwai Keye Team
     conference_short: arxiv
+    conference: arxiv
     pdf: https://arxiv.org/abs/2507.01949
     image: ./assets/img/keye_preview.png
 
