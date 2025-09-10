@@ -32,7 +32,7 @@ main:
     image: ./assets/img/keye_preview.png
 
   - title: Hypergraph-Enhanced Hashing for Unsupervised Cross-Modal Retrieval via Robust Similarity Guidance
-    authors: Fangming Zhong*, <strong>Chenglong Chu</strong>, Zijie Zhu, Zhikui Chen* (* Corresponding authors)
+    authors: Fangming Zhong*, <strong>Chenglong Chu</strong>, Zijie Zhu, Zhikui Chen
     conference_short: ACM MM
     conference: The 31st ACM International Conference on Multimedia <strong>(MM)</strong>, 2023.
     pdf: https://dl.acm.org/doi/abs/10.1145/3581783.3612116
@@ -40,7 +40,7 @@ main:
     image: ./assets/img/teaser_example_1.png
 
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
-    authors: <strong>Chenglong Chu</strong>, Fangming Zhong*, Zijie Zhu, Zhikui Chen (* Corresponding authors)
+    authors: <strong>Chenglong Chu</strong>, Fangming Zhong*, Zijie Zhu, Zhikui Chen
     conference_short: ACM MM
     conference: The 32st ACM International Conference on Multimedia <strong>(MM)</strong>, 2024.
     image: ./assets/img/paper2.png
