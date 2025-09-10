@@ -10,7 +10,7 @@ Currently, I am a Research Engineer at the Kwai Keye team, focusing on pre-train
 I pursued my Master’s degree at the INCODAT Lab of Dalian University of Technology, under the supervision of Prof. Fangming Zhong 📚👨‍🏫. During my graduate studies, I primarily worked on multimodal feature alignment and large-scale pre-training, which laid a methodological and engineering foundation for building unified and scalable multimodal foundation models in an industrial setting.
 
 ## Research Interests 🧠🔍
-- Unified Understanding-Generation Models: End-to-end multimodal instruction tuning, image/audio/video generation 🎨🔊🎥
+- Unified Understanding-Generation Models: End-to-end multimodal instruction tuning, image & audio & video generation 🎨🔊🎥
 
 - Multimodal Reasoning: Structured/programmatic reasoning (CoT/ToT), native multimodal reasoning 
 
