@@ -15,8 +15,6 @@ show_downloads: true
 google_analytics:
 remote_theme: yaoyao-liu/minimal-light
 
-
-
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
 enable_footnote: true

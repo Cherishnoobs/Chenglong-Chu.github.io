@@ -75,7 +75,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: auto; width: 270px; max-height: 120px; margin-top: 0; margin-left: 0; margin-bottom: 0; object-fit: contain; background: transparent; }
 
 /* Align image and text in one row, top-aligned */
-.publications .pub-row { display: grid; grid-template-columns: 220px 1fr; column-gap: 16px; align-items: start; }
+.publications .pub-row { display: grid; grid-template-columns: 220px 1fr; column-gap: 16px; align-items: center; }
 .publications .pub-row .abbr { height: auto; display: block; }
 .publications .pub-row .col-sm-9 { width: auto; }
 
