@@ -11,17 +11,20 @@ main:
   #   notes: Early Accept
 
   - title: OneRec-V2 Technical Report
-    autors: Kwai OneRec Team
+    authors: Kwai OneRec Team
+    conference_short: arxiv
     pdf: https://arxiv.org/abs/2508.20900
     image: ./assets/img/onerec_v2.png
 
   - title: Kwai Keye-VL 1.5 Technical Report
-    autors: Kwai Keye Team
+    authors: Kwai Keye Team
+    conference_short: arxiv
     pdf: https://arxiv.org/abs/2509.01563
     image: ./assets/img/keye1_5.png
 
   - title: Kwai Keye-VL Technical Report
-    autors: Kwai Keye Team
+    authors: Kwai Keye Team
+    conference_short: arxiv
     pdf: https://arxiv.org/abs/2507.01949
     image: ./assets/img/keye_preview.png
 
@@ -36,4 +39,5 @@ main:
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
     authors: <strong>Chenglong Chu</strong>, Fangming Zhong*, Zijie Zhu, Zhikui Chen (* Corresponding authors)
     conference_short: ACM MM
+    conference: The 32st ACM International Conference on Multimedia <strong>(MM)</strong>, 2024.
     image: ./assets/img/paper2.png
