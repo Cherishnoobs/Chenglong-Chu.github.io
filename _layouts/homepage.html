@@ -100,7 +100,7 @@
       <br>
 
       {% if site.enable_footnote %}
-      <p><small>&copy; Chenglong Chu, 2024</small></p>
+      <p class="footnote"><small>&copy; Chenglong Chu, <span id="year">2024</span></small></p>
       {% endif %}
 
       </section>
@@ -115,11 +115,10 @@
       
       // 在网页加载完成后执行更新年份的操作
       window.onload = function() {
-          // 查找具有指定ID的元素
           var yearElement = document.getElementById("year");
-          
-          // 将当前年份插入到元素中
-          yearElement.innerHTML = currentYear;
+          if (yearElement) {
+            yearElement.textContent = currentYear;
+          }
       };
   </script>
     {% if site.google_analytics %}
