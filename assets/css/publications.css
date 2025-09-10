@@ -82,9 +82,9 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: auto; width: 270px; max-height: 160px; margin-top: 5px; margin-left: 5px; margin-bottom: 5px; object-fit: contain; background: transparent; }
 
 /* Align image and text in one row, top-aligned */
-.publications .pub-row { display: flex; align-items: flex-start; gap: 8px; }
-.publications .pub-row .abbr { height: auto; display: flex; flex-direction: column; align-items: flex-start; }
-.publications .pub-row .col-sm-9 { width: auto; flex: 1 1 auto; }
+.publications .pub-row { display: grid; grid-template-columns: 220px 1fr; column-gap: 16px; align-items: start; }
+.publications .pub-row .abbr { height: auto; display: block; }
+.publications .pub-row .col-sm-9 { width: auto; }
 
 /* Ensure teaser image behaves as block and doesn't shift baseline */
-.publications .pub-row .teaser { display: block; }
+.publications .pub-row .teaser { display: block; width: 100%; height: auto; max-height: 160px; object-fit: contain; }
