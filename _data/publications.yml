@@ -36,4 +36,4 @@ main:
   - title: "Modality Cross-Guided Hashing for Unsupervised Cross-modal Retrieval via Fine-grained Semantic Decoupling"
     authors: <strong>Chenglong Chu</strong>, Fangming Zhong*, Zijie Zhu, Zhikui Chen (* Corresponding authors)
     conference_short: ACM MM
-    image: ./assets/img/tear2.png
+    image: ./assets/img/paper2.png
