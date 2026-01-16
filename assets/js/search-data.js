@@ -3,7 +3,7 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-layout-about-title-about-permalink-subtitle-engineer-kwai-onerec-team-profile-align-right-image-prof-pic-png-image-circular-false-more-info-p-cherish1357785883-gmail-com-p-n-selected-papers-true-social-true-announcements-enabled-false-scrollable-true-limit-5-latest-posts-enabled-false-scrollable-true-limit-3-content-p-i-am-chenglong-chu-an-engineer-at-kwai-onerec-team-i-received-my-master-s-degree-from-a-href-http-www-ubinec-org-incodat-a-lab-dalian-university-of-technology-advised-by-a-href-http-ubinec-org-zfm-cn-index-html-prof-fangming-zhong-a-i-received-my-b-eng-in-software-engineering-from-changzhou-university-p-n-n-p-my-current-research-interests-focus-on-multi-modal-feature-alignment-and-multi-modal-large-model-pre-training-with-the-increasingly-strong-trend-of-multi-modal-integration-in-the-community-i-hope-to-focus-on-the-following-areas-in-the-future-p-n-n-ul-n-li-n-p-strong-lightweight-and-efficient-generative-large-models-strong-most-of-the-current-mainstream-large-models-are-bloated-and-clumsy-by-studying-the-compression-acceleration-methods-for-generative-large-models-we-can-reduce-the-deployment-cost-of-large-models-and-make-large-models-better-used-in-the-real-world-p-n-li-n-li-n-p-strong-multi-modality-large-models-amp-embodied-intelligence-strong-traditional-computer-vision-research-paradigms-struggle-to-adapt-flexibly-to-the-complex-physical-rules-of-the-real-world-large-models-based-on-multi-modality-are-poised-to-break-through-these-limitations-in-the-future-p-n-li-n-ul-n-dir-excerpt-nil-name-about-md-path-pages-about-md-url",
+    id: "nav-layout-about-title-about-permalink-subtitle-engineer-kwai-onerec-team-profile-align-right-image-prof-pic-png-image-circular-false-more-info-p-cherish1357785883-gmail-com-p-n-selected-papers-true-social-true-announcements-enabled-false-scrollable-true-limit-5-latest-posts-enabled-false-scrollable-true-limit-3-content-p-i-am-chenglong-chu-an-engineer-at-kwai-onerec-team-i-received-my-m-s-from-a-href-http-www-ubinec-org-incodat-a-lab-dalian-university-of-technology-advised-by-a-href-http-ubinec-org-zfm-cn-index-html-prof-fangming-zhong-a-p-n-n-p-my-research-interests-include-p-n-n-ul-n-li-strong-generative-recommendation-strong-onerec-series-li-n-li-strong-unified-understanding-and-generation-models-strong-li-n-ul-n-dir-excerpt-nil-name-about-md-path-pages-about-md-url",
     title: "{"layout"=>"about", "title"=>"about", "permalink"=>"/", "subtitle"=>"Engineer @ Kwai Onerec Team", "profile"=>{"align"=>"right", "image"=>"prof_pic.png", "image_circular"=>false, "more_info"=>"<p>cherish1357785883@gmail.com</p>\n"}, "selected_papers"=>true,...",
     section: "Navigation",
     handler: () => {
@@ -15,13 +15,6 @@ ninja.data = [{
           section: "Navigation",
           handler: () => {
             window.location.href = "/Chenglong-Chu.github.io/publications/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Chenglong-Chu.github.io/cv/";
           },
         },{id: "post-a-post-with-plotly-js",
         
