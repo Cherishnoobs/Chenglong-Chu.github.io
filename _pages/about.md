@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Engineer @ <a href='https://kwai-keye.github.io/'>Kwai Keye Team</a>
+subtitle: Engineer @ Kwai Onerec Team
 
 profile:
   align: right
@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Chenglong Chu, an Engineer at [Kwai Keye Team](https://kwai-keye.github.io/). I received my Master's degree from [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from Changzhou University.
+I am Chenglong Chu, an Engineer at Kwai Onerec Team. I received my Master's degree from [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from Changzhou University.
 
 My current research interests focus on multi-modal feature alignment and multi-modal large model pre-training. With the increasingly strong trend of multi-modal integration in the community, I hope to focus on the following areas in the future:
 

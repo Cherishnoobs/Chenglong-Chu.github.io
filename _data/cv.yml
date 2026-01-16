@@ -4,7 +4,7 @@
     - name: Full Name
       value: Chenglong Chu
     - name: Position
-      value: Engineer @ Kwai Keye Team
+      value: Engineer @ Kwai Onerec Team
     - name: Languages
       value: Chinese (Native), English
 
@@ -25,11 +25,11 @@
   type: time_table
   contents:
     - title: Algorithm Engineer
-      institution: Kwai Keye Team
+      institution: Kwai Onerec Team
       year: 2024 - Present
       description:
         - Multi-modal large model development
-        - Keye-VL series model training and optimization
+        - Onerec series model training and optimization
 
 - title: Open Source Projects
   type: time_table
