@@ -25,10 +25,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Chenglong Chu, an Engineer at Kwai Onerec Team. I received my Master's degree from [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html). I received my B.Eng. in Software Engineering from Changzhou University.
+I am Chenglong Chu, an Engineer at Kwai OneRec Team. I received my M.S. from [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html).
 
-My current research interests focus on multi-modal feature alignment and multi-modal large model pre-training. With the increasingly strong trend of multi-modal integration in the community, I hope to focus on the following areas in the future:
+My research interests include:
 
-- **Lightweight and efficient generative large models**: Most of the current mainstream large models are bloated and clumsy. By studying the compression acceleration methods for generative large models, we can reduce the deployment cost of large models and make large models better used in the real world.
-
-- **Multi-modality large models & Embodied Intelligence**: Traditional computer vision research paradigms struggle to adapt flexibly to the complex physical rules of the real world. Large models based on multi-modality are poised to break through these limitations in the future.
+- **Generative Recommendation**: OneRec series.
+- **Unified Understanding and Generation Models**.
