@@ -7,7 +7,7 @@ first_name: Chenglong
 middle_name:
 last_name: Chu
 contact_note: >
- Algorithm Engineer @ Kwai Onerec Team
+  Algorithm Engineer @ Kwai Onerec Team
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Algorithm Engineer specializing in multi-modal large models and recommendation large models.
 footer_text: >
