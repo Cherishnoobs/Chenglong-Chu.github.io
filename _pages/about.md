@@ -25,9 +25,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Chenglong Chu, an Engineer at Kwai OneRec Team. I received my M.S. from [INCODAT](http://www.ubinec.org/) Lab, Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html).
+I am Chenglong Chu, an Engineer at Kwai OneRec Team. I received my M.S. from Dalian University of Technology, advised by [Prof. Fangming Zhong](http://ubinec.org/zfm/cn/index.html).
 
 My research interests include:
 
 - **Generative Recommendation**: OneRec series.
-- **Unified Understanding and Generation Models**.
+- **Unified Understanding and Generation Models**: Keye-VL series, OneBase.
+
+I am glad to chat about research, advising, collaborations. If you are interested in doing research with me, feel free to contact me.
