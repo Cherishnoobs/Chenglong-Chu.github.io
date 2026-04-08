@@ -46,30 +46,38 @@ def setup_proxy() -> None:
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
-MAX_RETRIES: int = 3
 
 
 def fetch_author_data():
-    """Fetch author data with retry logic and proxy rotation."""
-    for attempt in range(1, MAX_RETRIES + 1):
-        print(f"Attempt {attempt}/{MAX_RETRIES}: Fetching author data...")
-        setup_proxy()
-        scholarly.set_timeout(30)
-        scholarly.set_retries(3)
-        try:
-            author = scholarly.search_author_id(SCHOLAR_USER_ID)
-            author_data = scholarly.fill(author)
-            print(f"Successfully fetched author data on attempt {attempt}.")
-            return author_data
-        except Exception as e:
-            print(f"Attempt {attempt} failed: {e}")
-            if attempt == MAX_RETRIES:
-                print(
-                    f"All {MAX_RETRIES} attempts failed for user ID '{SCHOLAR_USER_ID}'. "
-                    "Google Scholar may be blocking requests."
-                )
-                sys.exit(1)
-    return None
+    """Fetch author data: try direct connection first, then fall back to proxy."""
+    scholarly.set_timeout(30)
+    scholarly.set_retries(3)
+
+    # Attempt 1: direct connection (works locally, may fail on CI)
+    print("Attempt 1/2: Trying direct connection...")
+    try:
+        author = scholarly.search_author_id(SCHOLAR_USER_ID)
+        author_data = scholarly.fill(author)
+        print("Successfully fetched author data via direct connection.")
+        return author_data
+    except Exception as e:
+        print(f"Direct connection failed: {e}")
+
+    # Attempt 2: use free proxy (fallback for CI environments)
+    print("Attempt 2/2: Trying with free proxy...")
+    setup_proxy()
+    try:
+        author = scholarly.search_author_id(SCHOLAR_USER_ID)
+        author_data = scholarly.fill(author)
+        print("Successfully fetched author data via proxy.")
+        return author_data
+    except Exception as e:
+        print(f"Proxy attempt failed: {e}")
+        print(
+            f"All attempts failed for user ID '{SCHOLAR_USER_ID}'. "
+            "Google Scholar may be blocking requests."
+        )
+        sys.exit(1)
 
 
 def get_scholar_citations() -> None:
