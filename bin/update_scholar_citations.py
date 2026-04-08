@@ -4,7 +4,7 @@ import os
 import sys
 import yaml
 from datetime import datetime
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
 
 
 def load_scholar_user_id() -> str:
@@ -32,8 +32,44 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
 
 
+def setup_proxy() -> None:
+    """Set up a free proxy to avoid Google Scholar IP blocking."""
+    print("Setting up free proxy for Google Scholar access...")
+    pg = ProxyGenerator()
+    success = pg.FreeProxies()
+    if success:
+        scholarly.use_proxy(pg)
+        print("Free proxy configured successfully.")
+    else:
+        print("Warning: Could not set up free proxy. Trying direct connection.")
+
+
 SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
+MAX_RETRIES: int = 3
+
+
+def fetch_author_data():
+    """Fetch author data with retry logic and proxy rotation."""
+    for attempt in range(1, MAX_RETRIES + 1):
+        print(f"Attempt {attempt}/{MAX_RETRIES}: Fetching author data...")
+        setup_proxy()
+        scholarly.set_timeout(30)
+        scholarly.set_retries(3)
+        try:
+            author = scholarly.search_author_id(SCHOLAR_USER_ID)
+            author_data = scholarly.fill(author)
+            print(f"Successfully fetched author data on attempt {attempt}.")
+            return author_data
+        except Exception as e:
+            print(f"Attempt {attempt} failed: {e}")
+            if attempt == MAX_RETRIES:
+                print(
+                    f"All {MAX_RETRIES} attempts failed for user ID '{SCHOLAR_USER_ID}'. "
+                    "Google Scholar may be blocking requests."
+                )
+                sys.exit(1)
+    return None
 
 
 def get_scholar_citations() -> None:
@@ -42,6 +78,7 @@ def get_scholar_citations() -> None:
     today = datetime.now().strftime("%Y-%m-%d")
 
     # Check if the output file was already updated today
+    existing_data = None
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, "r") as f:
@@ -62,16 +99,7 @@ def get_scholar_citations() -> None:
 
     citation_data = {"metadata": {"last_updated": today}, "papers": {}}
 
-    scholarly.set_timeout(15)
-    scholarly.set_retries(3)
-    try:
-        author = scholarly.search_author_id(SCHOLAR_USER_ID)
-        author_data = scholarly.fill(author)
-    except Exception as e:
-        print(
-            f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}. Please check your internet connection and Scholar user ID."
-        )
-        sys.exit(1)
+    author_data = fetch_author_data()
 
     if not author_data:
         print(
