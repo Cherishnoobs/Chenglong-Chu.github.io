@@ -30,11 +30,6 @@ redirect_from:
     <strong>Unified Multimodal Models (LLM / VLM)</strong>, and <strong>LLM for Recommendation</strong>,
     including the OneRec series, Keye-VL series, and Kelix.
   </p>
-  <p>
-    You can find my publications on
-    <a href="https://scholar.google.com/citations?user=O_merfAAAAAJ&amp;hl=en">Google Scholar</a>
-    (total citations: <strong><span id='total_cit'>190+</span></strong>).
-  </p>
   <div class="profile-tags">
     <span>Generative Recommendation</span>
     <span>Unified Multimodal Models</span>
@@ -64,7 +59,7 @@ redirect_from:
     <div class="timeline-meta">M.S. · School of Software Technology · Dalian</div>
     <div class="timeline-date">Graduated</div>
     <p>Advised by <a href="http://ubinec.org/zfm/cn/index.html">Prof. Fangming Zhong</a>.
-    Research on multimodal learning and recommendation.</p>
+    Research on multimodal learning.</p>
   </div>
 </div>
 
