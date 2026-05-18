@@ -77,7 +77,7 @@ redirect_from:
           <div class="experience-company">Kuaishou · OneRec Team</div>
           <div class="experience-role">Engineer</div>
         </div>
-        <div class="experience-date">2024.08 - Present · Beijing</div>
+        <div class="experience-date">2025.07 - Present · Beijing</div>
       </div>
       <ul>
         <li>Build and improve the <strong>OneRec</strong> generative recommendation system for industrial-scale deployment.</li>
