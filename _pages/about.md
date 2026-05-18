@@ -19,25 +19,27 @@ redirect_from:
 
 <div class="profile-hero">
   <p>
-    Hi, I am <strong>Chenglong Chu (褚成龙)</strong>. I am an <strong>Engineer</strong> at
+    Hi, I am <strong>Chenglong Chu (储成龙)</strong>. I am an <strong>Engineer</strong> at
     <a href="https://www.kuaishou.com/en">Kuaishou</a>, working with the
     <strong>OneRec Team</strong> on next-generation generative recommendation systems.
   </p>
   <p>
     I received my M.S. from <a href="https://en.dlut.edu.cn/">Dalian University of Technology</a>,
     advised by <a href="http://ubinec.org/zfm/cn/index.html">Prof. Fangming Zhong</a>.
-    My research focuses on <strong>Generative Recommendation</strong> and
-    <strong>Unified Understanding &amp; Generation Models</strong>, including the
-    OneRec series, Keye-VL series, and OneBase.
+    My research focuses on <strong>Generative Recommendation</strong>,
+    <strong>Unified Multimodal Models (LLM / VLM)</strong>, and <strong>LLM for Recommendation</strong>,
+    including the OneRec series, Keye-VL series, and Kelix.
   </p>
   <p>
-    I am glad to chat about research, advising, and collaborations. If you are interested
-    in working with me, feel free to reach out at
-    <a href="mailto:cherish1357785883@gmail.com">cherish1357785883@gmail.com</a>.
+    You can find my publications on
+    <a href="https://scholar.google.com/citations?user=O_merfAAAAAJ&amp;hl=en">Google Scholar</a>
+    (total citations: <strong><span id='total_cit'>190+</span></strong>).
+    I am glad to chat about research, advising, and collaborations &mdash; feel free to reach out.
   </p>
   <div class="profile-tags">
     <span>Generative Recommendation</span>
     <span>Unified Multimodal Models</span>
+    <span>Long-Sequence Modeling</span>
     <span>OneRec</span>
     <span>Keye-VL</span>
   </div>
@@ -46,9 +48,11 @@ redirect_from:
 <span class='anchor' id='news'></span>
 
 # 🔥 News
+- *2026.04*: &nbsp;Release a new work on long-sequence modeling — [Kwai Summary Attention (KSA)](https://arxiv.org/abs/2604.24432).
 - *2025*: &nbsp;Joined the **Kuaishou OneRec Team** as an Engineer, working on industrial generative recommendation.
-- *2025*: &nbsp;Contributing to **Keye-VL** series and **OneBase**, exploring unified understanding and generation models.
+- *2025*: &nbsp;Contributing to **Keye-VL** series and **Kelix**, exploring unified understanding and generation models.
 - *2024*: &nbsp;Graduated with M.S. from Dalian University of Technology, supervised by Prof. Fangming Zhong.
+- &nbsp;See my [Google Scholar](https://scholar.google.com/citations?user=O_merfAAAAAJ&hl=en) profile for the up-to-date publication list and citation stats.
 
 <span class='anchor' id='education'></span>
 
@@ -74,14 +78,98 @@ redirect_from:
           <div class="experience-company">Kuaishou · OneRec Team</div>
           <div class="experience-role">Engineer</div>
         </div>
-        <div class="experience-date">Present · Beijing</div>
+        <div class="experience-date">2024.08 - Present · Beijing</div>
       </div>
       <ul>
         <li>Build and improve the <strong>OneRec</strong> generative recommendation system for industrial-scale deployment.</li>
-        <li>Work on unified understanding and generation models, including <strong>Keye-VL</strong> and <strong>OneBase</strong>.</li>
-        <li>Explore scalable training and inference techniques for generative recommendation foundation models.</li>
+        <li>Work on unified understanding and generation models, including <strong>Keye-VL</strong> and <strong>Kelix</strong>.</li>
+        <li>Explore long-sequence modeling and scalable training / inference for generative recommendation foundation models.</li>
       </ul>
     </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="experience-content">
+      <div class="experience-header">
+        <div>
+          <div class="experience-company">Meituan · LongCat</div>
+          <div class="experience-role">Research Intern</div>
+        </div>
+        <div class="experience-date">2024.05 - 2024.08 · Beijing</div>
+      </div>
+      <ul>
+        <li>Worked on large language model research and engineering within the LongCat team.</li>
+        <li>Contributed to model training, evaluation pipelines, and downstream applications.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<span class='anchor' id='publications'></span>
+
+# 📝 Selected Publications
+
+<div class="publication-list">
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2026.04</span>
+    <a href="https://arxiv.org/abs/2604.24432"><strong>Kwai Summary Attention Technical Report (KSA)</strong></a>
+    <p>OneRec Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Efficient long-sequence modeling via summary-token compression (O(n/k) sequence-level compression).
+    Hybrid-KSA outperforms hybrid-GDN by <strong>+5.48%</strong> on RULER-128K.
+    <a href="https://github.com/Kuaishou-OneRec/KSA">[Code]</a></p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2026.02</span>
+    <a href="https://arxiv.org/abs/2602.09843"><strong>Kelix Technical Report: Closing the Understanding Gap of Discrete Tokens in Unified Multimodal Models</strong></a>
+    <p>Kuaishou Technology, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Product-quantization-based discrete vision tokenization for unified understanding &amp; generation.
+    Fully discrete autoregressive design; <strong>OCRBench 86.7</strong> (surpasses prior discrete baselines by 23%).</p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2025.12</span>
+    <a href="https://arxiv.org/abs/2512.24762"><strong>OpenOneRec Technical Report: An Open Foundation Model and Benchmark to Accelerate Generative Recommendation</strong></a>
+    <p>OneRec Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Open foundation models (1.7B / 8B) and <strong>RecIF-Bench</strong> (8 tasks) for generative recommendation;
+    <strong>+26.8%</strong> Recall@10 improvement on the Amazon benchmark.
+    <a href="https://huggingface.co/OpenOneRec">[Models]</a>
+    <a href="https://github.com/Kuaishou-OneRec/OpenOneRec">[Code]</a></p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2025.09</span>
+    <a href="https://arxiv.org/abs/2509.01563"><strong>Kwai Keye-VL 1.5 Technical Report</strong></a>
+    <p>Keye Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Slow-Fast video encoding with 4-stage progressive pre-training; context extension from 8K to 128K
+    for long-form video understanding.
+    <a href="https://kwai-keye.github.io/">[Project]</a>
+    <a href="https://github.com/Kwai-Keye/Keye">[Code]</a></p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2025.08</span>
+    <a href="https://arxiv.org/abs/2508.20900"><strong>OneRec-V2 Technical Report</strong></a>
+    <p>OneRec Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Lazy Decoder-Only architecture (94% fewer FLOPs, scales to <strong>8B</strong>) plus preference alignment
+    with real-world user interactions. Deployed on Kuaishou / Kuaishou Lite with App Stay Time gains of
+    <strong>+0.467% / +0.741%</strong>.</p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2025.07</span>
+    <a href="https://arxiv.org/abs/2507.01949"><strong>Kwai Keye-VL Technical Report</strong></a>
+    <p>Keye Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Foundation multimodal model of the Keye-VL series, covering vision-language understanding for
+    short-video scenarios.</p>
+  </div>
+
+  <div class="publication-item">
+    <span class="pub-badge">ACM MM 2023</span>
+    <a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612116"><strong>Hypergraph-Enhanced Hashing for Unsupervised Cross-Modal Retrieval</strong></a>
+    <p>Fangming Zhong, <strong>Chenglong Chu</strong>, Zijie Zhu, Zhikui Chen.
+    <em>Proceedings of the 31st ACM International Conference on Multimedia (MM '23), pp. 3517–3527</em></p>
+    <p>Hypergraph-based representation learning for unsupervised cross-modal hashing.</p>
   </div>
 </div>
 
@@ -97,7 +185,12 @@ redirect_from:
   <div class="publication-item">
     <span class="pub-badge">Topic</span>
     <a>Unified Understanding and Generation</a>
-    <p>Keye-VL series and OneBase — bridging multimodal understanding and generation.</p>
+    <p>Keye-VL series and Kelix — bridging multimodal understanding and generation.</p>
+  </div>
+  <div class="publication-item">
+    <span class="pub-badge">Topic</span>
+    <a>Long-Sequence Modeling</a>
+    <p>Efficient attention and long-context techniques for foundation models.</p>
   </div>
 </div>
 
@@ -106,3 +199,4 @@ redirect_from:
 # 📫 Contact
 - Email: [cherish1357785883@gmail.com](mailto:cherish1357785883@gmail.com)
 - GitHub: [Cherishnoobs](https://github.com/Cherishnoobs)
+- Google Scholar: [Chenglong Chu](https://scholar.google.com/citations?user=O_merfAAAAAJ&hl=en)

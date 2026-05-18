@@ -21,13 +21,13 @@ baidu_site_verification  :
 
 # Site Author
 author:
-  name             : "Chenglong Chu (褚成龙)"
+  name             : "Chenglong Chu (储成龙)"
   avatar           : "images/profile.png"
   bio              : "Kuaishou · OneRec Team"
   location         : "Beijing, China"
   employer         :
   pubmed           :
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=O_merfAAAAAJ&hl=en"
   email            : "cherish1357785883@gmail.com"
   researchgate     :
   uri              :
