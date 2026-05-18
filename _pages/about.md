@@ -34,7 +34,6 @@ redirect_from:
     You can find my publications on
     <a href="https://scholar.google.com/citations?user=O_merfAAAAAJ&amp;hl=en">Google Scholar</a>
     (total citations: <strong><span id='total_cit'>190+</span></strong>).
-    I am glad to chat about research, advising, and collaborations &mdash; feel free to reach out.
   </p>
   <div class="profile-tags">
     <span>Generative Recommendation</span>
@@ -52,12 +51,14 @@ redirect_from:
 - *2025*: &nbsp;Joined the **Kuaishou OneRec Team** as an Engineer, working on industrial generative recommendation.
 - *2025*: &nbsp;Contributing to **Keye-VL** series and **Kelix**, exploring unified understanding and generation models.
 - *2024*: &nbsp;Graduated with M.S. from Dalian University of Technology, supervised by Prof. Fangming Zhong.
-- &nbsp;See my [Google Scholar](https://scholar.google.com/citations?user=O_merfAAAAAJ&hl=en) profile for the up-to-date publication list and citation stats.
 
 <span class='anchor' id='education'></span>
 
 # 📖 Education
 <div class="timeline-card">
+  <div class="timeline-logo">
+    <img src="images/logos/dlut.png" alt="Dalian University of Technology">
+  </div>
   <div class="timeline-body">
     <div class="timeline-title">Dalian University of Technology</div>
     <div class="timeline-meta">M.S. · School of Software Technology · Dalian</div>
@@ -72,6 +73,9 @@ redirect_from:
 # 💼 Work Experiences
 <div class="experience-grid">
   <div class="experience-card highlight">
+    <div class="company-logo">
+      <img src="images/logos/kuaishou.svg" alt="Kuaishou">
+    </div>
     <div class="experience-content">
       <div class="experience-header">
         <div>
@@ -89,6 +93,9 @@ redirect_from:
   </div>
 
   <div class="experience-card">
+    <div class="company-logo">
+      <img src="images/logos/meituan.jpg" alt="Meituan">
+    </div>
     <div class="experience-content">
       <div class="experience-header">
         <div>
@@ -170,27 +177,6 @@ redirect_from:
     <p>Fangming Zhong, <strong>Chenglong Chu</strong>, Zijie Zhu, Zhikui Chen.
     <em>Proceedings of the 31st ACM International Conference on Multimedia (MM '23), pp. 3517–3527</em></p>
     <p>Hypergraph-based representation learning for unsupervised cross-modal hashing.</p>
-  </div>
-</div>
-
-<span class='anchor' id='research-interests'></span>
-
-# 🔬 Research Interests
-<div class="publication-list">
-  <div class="publication-item">
-    <span class="pub-badge">Topic</span>
-    <a>Generative Recommendation</a>
-    <p>OneRec series — towards unified end-to-end generative recommender systems.</p>
-  </div>
-  <div class="publication-item">
-    <span class="pub-badge">Topic</span>
-    <a>Unified Understanding and Generation</a>
-    <p>Keye-VL series and Kelix — bridging multimodal understanding and generation.</p>
-  </div>
-  <div class="publication-item">
-    <span class="pub-badge">Topic</span>
-    <a>Long-Sequence Modeling</a>
-    <p>Efficient attention and long-context techniques for foundation models.</p>
   </div>
 </div>
 
