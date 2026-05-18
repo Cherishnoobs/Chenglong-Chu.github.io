@@ -1,25 +1,332 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "tabs",
-  "typograms",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular",
-  "tabler-icons/tabler-icons.scss",
-  "tabler-icons/tabler-icons-filled.scss",
-  "tabler-icons/tabler-icons-outline.scss"
-;
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+.paper-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+    
+
+    .paper-box-image{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        order: 2;
+        img {
+            max-width: 400px;
+            box-shadow: 3px 3px 6px #888;
+            object-fit: cover;
+        }
+    }
+    
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
+    }
+    
+    @include breakpoint($medium) {
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+        
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
+        }
+
+    }
+
+
+}
+
+$scroll_offset : 2em;
+h1:before, .anchor:before { 
+    content: ''; 
+    display: block; 
+    position: relative; 
+    width: 0; 
+    height: $scroll_offset; 
+    margin-top: -$scroll_offset;
+}
+
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: white;
+    background-color: #00369f;
+    font-size: .8em;
+}
+
+.profile-hero {
+    margin: 0.5rem 0 1.75rem;
+    padding: 1.35rem 1.5rem;
+    border: 1px solid #e6ecf5;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #f7fbff 0%, #ffffff 58%, #fff7f2 100%);
+    box-shadow: 0 16px 40px rgba(30, 64, 120, 0.08);
+
+    p {
+        margin-bottom: 0.75rem;
+    }
+
+    .profile-kicker {
+        margin-bottom: 0.7rem;
+        color: #0052d9;
+        font-size: 0.86rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+
+.profile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+
+    span {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.28rem 0.62rem;
+        border: 1px solid #dbe6f3;
+        border-radius: 999px;
+        color: #25476a;
+        background: rgba(255, 255, 255, 0.75);
+        font-size: 0.78rem;
+        font-weight: 600;
+    }
+}
+
+.timeline-card,
+.experience-card {
+    border: 1px solid #e5eaf0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 10px 26px rgba(24, 42, 70, 0.06);
+}
+
+.timeline-card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.9rem;
+    padding: 1rem;
+}
+
+.timeline-logo,
+.company-logo {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #edf1f6;
+    border-radius: 14px;
+    background: #fff;
+}
+
+.timeline-logo {
+    width: 74px;
+    height: 74px;
+
+    img {
+        max-width: 58px;
+        max-height: 58px;
+        object-fit: contain;
+    }
+}
+
+.timeline-title,
+.experience-company {
+    color: #102033;
+    font-weight: 800;
+}
+
+.timeline-title {
+    font-size: 1.03rem;
+}
+
+.timeline-meta,
+.experience-role {
+    color: #536579;
+    font-size: 0.9rem;
+}
+
+.timeline-date,
+.experience-date {
+    color: #7a8797;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.timeline-body p {
+    margin: 0.45rem 0 0;
+    color: #44546a;
+    font-size: 0.92rem;
+}
+
+.experience-grid {
+    display: grid;
+    gap: 0.95rem;
+}
+
+.experience-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #d9e5f4;
+
+    &.highlight {
+        border-left-color: #0052d9;
+        background: linear-gradient(90deg, #f7fbff 0%, #fff 38%);
+    }
+}
+
+.company-logo {
+    width: 92px;
+    height: 92px;
+    padding: 0.7rem;
+
+    img {
+        max-width: 76px;
+        max-height: 64px;
+        object-fit: contain;
+    }
+}
+
+.experience-content {
+    flex: 1 1 auto;
+    min-width: 0;
+
+    ul {
+        margin: 0.62rem 0 0;
+        padding-left: 1.1rem;
+    }
+
+    li {
+        margin-bottom: 0.28rem;
+        color: #344258;
+        font-size: 0.92rem;
+        line-height: 1.45;
+    }
+}
+
+.experience-header {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.publication-list {
+    margin-top: 0.9rem;
+}
+
+.publication-item {
+    position: relative;
+    margin-bottom: 0.72rem;
+    padding: 0.72rem 0.9rem 0.72rem 6.9rem;
+    border: 1px solid #e8edf3;
+    border-radius: 12px;
+    background: #fff;
+
+    a {
+        color: #12345a;
+        font-weight: 800;
+    }
+
+    p {
+        margin: 0.28rem 0 0;
+        color: #5b6674;
+        font-size: 0.88rem;
+        line-height: 1.38;
+    }
+}
+
+.pub-badge {
+    position: absolute;
+    top: 0.78rem;
+    left: 0.85rem;
+    min-width: 4.9rem;
+    padding: 0.18rem 0.45rem;
+    border-radius: 999px;
+    color: #fff;
+    background: #1f4e79;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+@include breakpoint(max-width $small) {
+    .timeline-card,
+    .experience-card,
+    .experience-header {
+        display: block;
+    }
+
+    .timeline-logo,
+    .company-logo {
+        margin-bottom: 0.75rem;
+    }
+
+    .publication-item {
+        padding-left: 0.9rem;
+    }
+
+    .pub-badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 0.4rem;
+    }
+}

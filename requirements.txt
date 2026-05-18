@@ -1,4 +1,0 @@
-nbconvert
-pyyaml
-scholarly
-free-proxy
