@@ -28,13 +28,14 @@ redirect_from:
     advised by <a href="http://ubinec.org/zfm/cn/index.html">Prof. Fangming Zhong</a>.
     My research focuses on <strong>Generative Recommendation</strong>,
     <strong>Unified Multimodal Models (LLM / VLM)</strong>, and <strong>LLM for Recommendation</strong>,
-    including the OneRec series, Keye-VL series, and Kelix.
+    including the OneRec / OneReason series, Keye-VL series, and Kelix.
   </p>
   <div class="profile-tags">
     <span>Generative Recommendation</span>
     <span>Unified Multimodal Models</span>
     <span>Long-Sequence Modeling</span>
     <span>OneRec</span>
+    <span>OneReason</span>
     <span>Keye-VL</span>
   </div>
 </div>
@@ -42,6 +43,7 @@ redirect_from:
 <span class='anchor' id='news'></span>
 
 # 🔥 News
+- *2026.06*: &nbsp;Released [OneReason Technical Report](https://arxiv.org/abs/2606.06260) and the open-source [OneReason-0.8B Pretrain checkpoint](https://huggingface.co/OpenOneRec/OneReason-0.8B-pretrain-competition).
 - *2026.04*: &nbsp;Release a new work on long-sequence modeling — [Kwai Summary Attention (KSA)](https://arxiv.org/abs/2604.24432).
 - *2025*: &nbsp;Joined the **Kuaishou OneRec Team** as an Engineer, working on industrial generative recommendation.
 - *2025*: &nbsp;Contributing to **Keye-VL** series and **Kelix**, exploring unified understanding and generation models.
@@ -81,6 +83,7 @@ redirect_from:
       </div>
       <ul>
         <li>Build and improve the <strong>OneRec</strong> generative recommendation system for industrial-scale deployment.</li>
+        <li>Contribute to <strong>OneReason</strong>, a reasoning foundation model for generative recommendation, including open model release.</li>
         <li>Work on unified understanding and generation models, including <strong>Keye-VL</strong> and <strong>Kelix</strong>.</li>
         <li>Explore long-sequence modeling and scalable training / inference for generative recommendation foundation models.</li>
       </ul>
@@ -112,6 +115,14 @@ redirect_from:
 # 📝 Selected Publications
 
 <div class="publication-list">
+  <div class="publication-item">
+    <span class="pub-badge">arXiv 2026.06</span>
+    <a href="https://arxiv.org/abs/2606.06260"><strong>OneReason Technical Report</strong></a>
+    <p>OneRec Team, <strong>Chenglong Chu</strong>, etc.</p>
+    <p>Reasoning foundation models for generative recommendation, connecting LLMs with itemic-token-based recommender systems through perception pre-training, cognition-enhanced CoT SFT, and specialize-then-unify RL.
+    <a href="https://huggingface.co/OpenOneRec/OneReason-0.8B-pretrain-competition">[Model]</a></p>
+  </div>
+
   <div class="publication-item">
     <span class="pub-badge">arXiv 2026.04</span>
     <a href="https://arxiv.org/abs/2604.24432"><strong>Kwai Summary Attention Technical Report (KSA)</strong></a>
