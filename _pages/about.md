@@ -37,6 +37,7 @@ redirect_from:
     <span>OneRec</span>
     <span>OneReason</span>
     <span>Keye-VL</span>
+    <span>Citations: <strong id="total_cit">--</strong></span>
   </div>
 </div>
 
